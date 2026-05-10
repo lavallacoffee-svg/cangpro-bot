@@ -147,7 +147,7 @@ LINE：@clb888`;
 
 💰 比同行便宜
   空快省約 NT$${airSave > 0 ? airSave : 0}
-  海快省約 NT$${seaSave > 0 ? seaSave : 0}
+  海快：競品最低10kg起算（NT$700起），我們無限制，省更多
 
 💡 全程包稅｜嚴格實重｜不計拋
 需要協助安排出貨嗎？😊`;
@@ -184,6 +184,7 @@ ${faqContext}
 - 如果客人重複問同樣問題，先溫柔提醒「剛才有說明過～」，然後再完整重複一遍答案，不要只叫他看上面
 2. 一次只問一個問題，不要連問多個
 3. 語氣活潑有禮貌又專業，像朋友一樣親切，適當使用emoji（😊🎉📦✅）
+5. 絕對不使用 markdown 格式（不用**粗體**、不用#標題、不用-列表），純文字回覆
 4. 不確定直接說：這個問題請聯繫 @clb888
 5. 問題超出範圍直接說：這個問題請聯繫 @clb888`;
 
@@ -221,6 +222,15 @@ async function replyMessage(replyToken: string, text: string) {
   });
 }
 
+// — LINE Quick Reply —
+async function replyWithQuickReply(replyToken: string, text: string, items: { label: string; text: string }[]) {
+  await fetch("https://api.line.me/v2/bot/message/reply", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${LINE_CHANNEL_ACCESS_TOKEN}` },
+    body: JSON.stringify({ replyToken, messages: [{ type: "text", text, quickReply: { items: items.map(item => ({ type: "action", action: { type: "message", label: item.label, text: item.text } })) } }] }),
+  });
+}
+
 // — LINE Push —
 export async function pushMessage(userId: string, text: string) {
   await fetch("https://api.line.me/v2/bot/message/push", {
@@ -243,6 +253,82 @@ async function handleTextMessage(event: any) {
   const lineUserId = event.source.userId;
 
   try {
+    // 我要出貨 → Quick Reply
+    const isShipTrigger = /我要出貨|想出貨|幫我出貨|出貨申請/.test(userMessage.trim());
+    if (isShipTrigger) {
+      await replyWithQuickReply(replyToken, "請問您的包裹目前狀態是？😊", [
+        { label: "📦 包裹已到深圳倉", text: "包裹已到倉，要安排出貨" },
+        { label: "🚚 剛在淘寶下單", text: "剛下單，包裹還沒到倉" },
+        { label: "❓ 不確定包裹狀態", text: "不確定包裹狀態" }
+      ]);
+      return;
+    }
+
+    // 出貨狀態選項處理
+    if (userMessage === '包裹已到倉，要安排出貨') {
+      const code = await lookupWarehouseCode(lineUserId);
+      if (code) {
+        await replyWithQuickReply(replyToken, `好的！您的入倉編號是 ${code} 📦
+
+請選擇出貨方式：`, [
+          { label: "✈️ 極速空快（1-2天）", text: "我要選空快出貨" },
+          { label: "🚢 極速海快（3-5天）", text: "我要選海快出貨" }
+        ]);
+      } else {
+        await replyMessage(replyToken, `還沒有入倉編號嗎？先建檔取得專屬編號 👇
+https://liff.line.me/2009972505-gtmQGDv0`);
+      }
+      return;
+    }
+    if (userMessage === '剛下單，包裹還沒到倉') {
+      await replyMessage(replyToken, `沒問題！包裹寄到我們深圳倉後，我們會 LINE 通知您 📬
+
+下單時記得：
+收件人姓名填您的入倉編號
+地址：深圳市寶安區福海街道大洋路90號中糧機器人科技園15棟2樓208
+電話：18165786929
+
+到倉後我們會主動通知您安排出貨 😊`);
+      return;
+    }
+    if (userMessage === '我要選空快出貨' || userMessage === '我要選海快出貨') {
+      const method = userMessage === '我要選空快出貨' ? '極速空快（1-2天）' : '極速海快（3-5天）';
+      await replyWithQuickReply(replyToken, '好的，選擇' + method + ' ✅\n\n這批包裹要怎麼處理？', [
+        { label: '🚀 直接出貨', text: '直接出貨' },
+        { label: '⏳ 留倉等其他包裹', text: '先留倉等其他包裹' }
+      ]);
+      return;
+    }
+    if (userMessage === '直接出貨') {
+      await replyWithQuickReply(replyToken, '好的，直接出貨 🚀\n\n請選擇台灣派送方式：', [
+        { label: '📬 i郵箱自取（NT$40起）', text: '派送選i郵箱' },
+        { label: '🏠 順豐宅配（NT$95起）', text: '派送選順豐' }
+      ]);
+      return;
+    }
+    if (userMessage === '先留倉等其他包裹') {
+      await replyMessage(replyToken, '沒問題！包裹幫您留倉 📦\n\n15天內免費暫存，等其他包裹到齊再通知我們一起出貨，派送費只付一次更划算 😊');
+      return;
+    }
+    if (userMessage === '派送選i郵箱') {
+      await replyMessage(replyToken, '好的，選 i郵箱自取 📬\n\n請告訴我您要在哪個縣市取件？\n或直接查詢最近據點：https://ezpost.post.gov.tw/ibox/e_map/index');
+      return;
+    }
+    if (userMessage === '派送選順豐') {
+      await replyMessage(replyToken, '好的，選順豐宅配 🏠\n\n請提供台灣收件地址（含縣市區街道門號），我們幫您安排出貨 😊');
+      return;
+    }
+    if (userMessage === '不確定包裹狀態') {
+      await replyMessage(replyToken, `沒關係！請提供以下資訊，我們幫您查詢 🔍
+
+入倉編號（如有）
+賣家快遞單號
+購買平台和訂單編號
+
+有這些資訊就能幫您確認包裹狀態 😊`);
+      return;
+    }
+
     // 安排出貨
     const isNeedShip = /^需要$|^好$|^要$|^幫我安排$/.test(userMessage.trim());
     if (isNeedShip) {
@@ -304,7 +390,8 @@ async function handleTextMessage(event: any) {
     // 策略0.5：運費試算
     const trimmed = userMessage.trim();
     const isWeightQuestion = /不能寄|能寄嗎|可以寄|寄得了|超重|上限|限制/.test(trimmed);
-    if (!isWeightQuestion && isShippingCalcTrigger(trimmed) && searchFAQWithScore(userMessage)[0]?.score < 30) {
+    const isShipOptionMsg = /^我要選空快出貨$|^我要選海快出貨$|^直接出貨$|^先留倉等其他包裹$|^派送選i郵箱$|^派送選順豐$/.test(trimmed);
+    if (!isWeightQuestion && !isShipOptionMsg && isShippingCalcTrigger(trimmed) && searchFAQWithScore(userMessage)[0]?.score < 30) {
       const weight = extractWeightFromQuery(trimmed);
       if (weight) {
         const dims = extractDimensions(trimmed);
