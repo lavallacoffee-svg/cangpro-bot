@@ -1,0 +1,17 @@
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_00.png'
+duration 3.2
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_01.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_02.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_03.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_04.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_05.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_06.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_07.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-5-switch-5-steps/card_07.png'

@@ -1,0 +1,17 @@
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_00.png'
+duration 3.2
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_01.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_02.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_03.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_04.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_05.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_06.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_07.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-1-newbie-5-must-do/card_07.png'

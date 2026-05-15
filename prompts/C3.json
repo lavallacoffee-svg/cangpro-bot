@@ -1,0 +1,47 @@
+{
+  "slug": "C3-engineer-husband-research",
+  "title": "C3《我老公第一次幫我研究集運》",
+  "style_prefix": "Photography style: candid smartphone-style photo, bright natural window light, warm cream and white tones, slightly desaturated, modern Taiwanese home setting with light wood furniture and white walls. Realistic, not stylized. Feels like a real couple's home documented on Instagram Reels. Composition: vertical 9:16 framing, leave 20% headroom at top. No watermarks, no logos, no Chinese text in the image.",
+  "scenes": [
+    {
+      "label": "場 1 小紅書收藏284件",
+      "quality": "medium",
+      "prompt": "Close-up vertical shot of a woman's hands holding a smartphone. The screen shows a generic social shopping app (no Chinese text) with a grid of product thumbnails — clothes, home items, accessories — in a Pinterest/waterfall layout. A saved collection counter in the top corner shows a large number. The phone is held over a light wood table. Warm natural morning light. Realistic screen glow. Vertical 9:16 framing."
+    },
+    {
+      "label": "場 2 老公認真研究",
+      "quality": "medium",
+      "prompt": "A 32-year-old Taiwanese man sitting at a home desk, focused on a laptop screen. He has a slightly serious, analytical expression — eyebrows slightly furrowed in concentration. He is wearing a casual gray t-shirt. A coffee mug, notepad, and pen on the desk. Modern home office corner with white walls. Warm morning window light from the side. Candid shot from slightly above, 3/4 angle. Vertical 9:16 framing. Engineering-type, thoughtful energy."
+    },
+    {
+      "label": "場 3 五個分頁比較",
+      "quality": "medium",
+      "prompt": "Overhead flat-lay of a laptop keyboard and trackpad, with the screen showing a browser with multiple tabs open. On the visible tab, a comparison table or browser grid showing multiple shipping company website thumbnails with some marked with red X symbols and one marked with a gold star or checkmark. No readable text. Cool white desk surface, overhead home office light. Vertical 9:16 framing — laptop in lower 60% of frame, upper area shows desk surface."
+    },
+    {
+      "label": "場 4 老公講三個理由",
+      "quality": "medium",
+      "prompt": "The same Taiwanese man from scene 2, now facing the camera with a confident, explanatory expression. He is holding up one finger, about to count off three reasons. He has the posture of someone explaining something important calmly and logically. Behind him, the laptop screen is visible but blurred. Warm home office lighting, shallow depth of field. Vertical 9:16 framing, mid-shot chest up. Natural, not performed."
+    },
+    {
+      "label": "場 5 手機一分鐘建檔",
+      "quality": "medium",
+      "prompt": "Close-up of a man's hands holding a smartphone, typing in a form on a clean mobile app interface (no Chinese text — generic registration form with input fields). The progress bar at the top shows 'almost complete'. A confirmation screen is about to appear. Warm home desk surface visible below, natural light. Realistic hand texture. Vertical 9:16 framing. The simplicity and speed of the setup is the mood."
+    },
+    {
+      "label": "場 6 開箱第一箱",
+      "quality": "medium",
+      "prompt": "A Taiwanese woman (wife) kneeling on a light wood floor, opening a brown cardboard shipping box. She is pulling out items — folded clothes, a small household item. Her expression is happy and surprised. The box has a clean shipping label (blurred, no readable text). Warm afternoon window light. Multiple items visible inside the box, neatly packed. Vertical 9:16 framing, shot from slightly above. Authentic home unboxing moment."
+    },
+    {
+      "label": "場 7 老公在旁邊笑",
+      "quality": "medium",
+      "prompt": "The Taiwanese couple together in their living room. The wife is seated on the floor with the open box, the husband is standing/crouching nearby, looking at the unpacked items. He has a small satisfied smile — the 'I told you so but I'm happy it worked' expression. Both look relaxed and natural. Warm living room light, cream-colored furniture visible. Shallow depth of field. Vertical 9:16 framing. Real couple energy, not posed."
+    },
+    {
+      "label": "場 8 收尾留言CTA",
+      "quality": "medium",
+      "prompt": "The wife sitting on the couch, looking directly at the camera with a warm, inviting smile, as if talking to a friend. She holds up her phone slightly, in the universal 'here's the link' gesture. The open shipping box is visible in the background on the floor. Warm evening living room lighting. Vertical 9:16 framing with headroom for caption. Authentic, low-key, no performance."
+    }
+  ]
+}

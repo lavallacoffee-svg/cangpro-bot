@@ -1,0 +1,15 @@
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_00.png'
+duration 3.2
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_01.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_02.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_03.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_04.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_05.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_06.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-3-tax-exemption/card_06.png'

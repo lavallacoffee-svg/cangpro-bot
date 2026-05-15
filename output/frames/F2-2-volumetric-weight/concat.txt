@@ -1,0 +1,15 @@
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_00.png'
+duration 3.2
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_01.png'
+duration 4.0
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_02.png'
+duration 4.0
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_03.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_04.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_05.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_06.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-2-volumetric-weight/card_06.png'
