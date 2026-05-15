@@ -1,0 +1,47 @@
+{
+  "slug": "C1-official-shipping",
+  "title": "C1《我以為官方集運最安全》",
+  "style_prefix": "Photography style: candid smartphone-style photo, natural window light, warm and soft tones, slightly desaturated, film-grain texture, shot at home in a modern Taiwanese apartment with cream-colored walls and light wood furniture. Realistic, not stylized. Subject feels like a real KOC sharing on Instagram Reels, not a model. Composition: vertical 9:16 framing, leave 20% headroom at the top for caption text. No watermarks, no logos, no Chinese text in the image.",
+  "scenes": [
+    {
+      "label": "場 1 主角抱嬰兒",
+      "quality": "medium",
+      "prompt": "A 30-year-old Taiwanese mother sitting on a beige fabric couch, wearing a loose cream-colored knit sweater, lightly messy hair tied in a low bun, soft no-makeup look. She is gently holding a 4-month-old baby in a white onesie against her chest, looking down at the baby with a small relaxed smile. Soft afternoon window light from the left. Wide cozy framing showing the living room: a small potted plant, baby toys on a wooden coffee table. Vertical portrait composition, slightly dim warm tones, candid documentary feel. The mother is not posing; this looks like a real moment captured."
+    },
+    {
+      "label": "場 2 淘寶 APP 螢幕",
+      "quality": "medium",
+      "prompt": "Close-up overhead shot of a woman's hands holding a smartphone showing a shopping app interface (NOT Chinese characters; instead show generic mobile e-commerce UI with product cards, prices like NT$199, NT$299, and an orange 'Buy Now' button). The phone is held over a wooden table with a half-drunk cup of tea and a baby bottle visible at the edge of frame. Warm interior light. Realistic skin texture on hands, no jewelry. Vertical 9:16 framing."
+    },
+    {
+      "label": "場 3 小夜燈被退",
+      "quality": "medium",
+      "prompt": "A flat-lay photo on a light wood desk: one small plastic baby night-light (white and pale yellow, mushroom-shaped) sitting next to a brown cardboard package with a red 'RETURN TO SENDER' shipping sticker, courier waybill barcode visible but no readable text. Natural soft window light from the upper left. A frustrated empty coffee mug on the side. Vertical composition. Realistic product photography, not staged-perfect — looks like a real return package photographed at home."
+    },
+    {
+      "label": "場 4 嬰兒監視器退回",
+      "quality": "medium",
+      "prompt": "Overhead flat-lay on the same wood desk: a small white baby monitor camera (round shape with a single lens) lying next to a brown cardboard box with a generic 'REJECTED' red stamp (no readable text). A receipt slip visible nearby with blurred-out text. Soft warm window light. Documentary-style real-home photo, slight depth of field. Vertical 9:16 composition."
+    },
+    {
+      "label": "場 5 磁吸玩具退回",
+      "quality": "medium",
+      "prompt": "Flat-lay photo: colorful baby magnetic blocks (red, blue, yellow geometric pieces) spilled out from a small open cardboard package with a red rejection sticker. Wood desk surface, natural side light from a window, realistic shadows. A pacifier and a small spoon visible at the edge of the frame to convey 'baby parent's desk'. Vertical 9:16 framing, candid not staged."
+    },
+    {
+      "label": "場 6 LINE 對話手機特寫",
+      "quality": "medium",
+      "prompt": "Vertical close-up of a smartphone held in a woman's left hand. The phone screen shows a generic green-themed messaging app conversation (mimicking LINE aesthetic but no Chinese characters — use blank chat bubbles in green and gray). A green chat bubble on the right and a gray one on the left, with the typing indicator (three dots) showing at the bottom. Background is softly blurred — a cozy living room with a baby blanket visible. Natural warm indoor light. Realistic phone reflection and finger texture."
+    },
+    {
+      "label": "場 7 棉被在地秤上",
+      "quality": "medium",
+      "prompt": "Overhead shot of a folded pale-pink baby blanket sitting on a small white digital kitchen scale on a light wood floor. The scale's LCD display clearly shows the number '1.8' (no other text or characters). Soft natural daylight from the side. Realistic textures: the blanket is plush, the scale has slight smudges. A roll of packing tape and a tape measure visible nearby. Vertical 9:16 framing. Documentary realism."
+    },
+    {
+      "label": "場 8 主角輕笑收尾",
+      "quality": "medium",
+      "prompt": "Same Taiwanese mother from scene 1, sitting in the same beige couch, now in a slightly different pose — looking off-camera and giving a small genuine smile, eyes crinkled. The baby is sleeping against her shoulder. Soft golden hour window light from the right, slight backlight halo on her hair. Warm filmic tones, slightly grainy. Vertical 9:16 framing with headroom at top. Looks like an authentic IG Reels closing shot — calm, real, no acting."
+    }
+  ]
+}
