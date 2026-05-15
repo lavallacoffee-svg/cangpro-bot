@@ -1,0 +1,15 @@
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_00.png'
+duration 3.2
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_01.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_02.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_03.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_04.png'
+duration 3.8
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_05.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_06.png'
+duration 3.5
+file '/home/user/cangpro-bot/output/frames/F2-4-cargo-classification/card_06.png'
