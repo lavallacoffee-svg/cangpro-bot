@@ -1,0 +1,47 @@
+{
+  "slug": "C2-no-customer-service",
+  "title": "C2《一個叫不到客服的早上》",
+  "style_prefix": "Photography style: candid smartphone-style photo, natural light, slightly cool and muted tones in early scenes shifting to warm in later scenes, film-grain texture, shot in a modern Taiwanese office and apartment. Realistic, not stylized. Subject feels like a real person sharing on Instagram Reels, not a model. Composition: vertical 9:16 framing, leave 20% headroom at the top for caption text. No watermarks, no logos, no Chinese text in the image.",
+  "scenes": [
+    {
+      "label": "場 1 辦公桌手機找客服",
+      "quality": "medium",
+      "prompt": "Overhead flat-lay shot of a modern office desk. A smartphone lies on the desk showing a generic mobile app interface (no Chinese characters) — the screen shows a FAQ section and a 'Submit Form' button but no chat/call option. A coffee mug, keyboard corner, and sticky notes visible around the phone. Cool fluorescent office lighting. Realistic office clutter. Vertical 9:16 framing. Time overlay suggestion: subtle '09:23 AM' context, but no text in the actual image."
+    },
+    {
+      "label": "場 2 三格快剪：表單、刪文、LINE群",
+      "quality": "medium",
+      "prompt": "Triptych-style flat-lay composition on a desk: three phones side by side showing different frustrating scenarios — left phone shows a generic 'form submitted' confirmation screen with no reply indicator, middle phone shows a generic social media post with a red 'removed' badge, right phone shows a messaging group with many avatar icons but no admin or staff badges. Cool office light. No Chinese text. Vertical 9:16 composition showing all three phones."
+    },
+    {
+      "label": "場 3 主角嘆氣看手機",
+      "quality": "medium",
+      "prompt": "A 28-year-old Taiwanese woman sitting at an office desk, wearing a simple white button-down shirt, hair in a neat ponytail. She is holding her phone and staring at it with a tired, slightly resigned expression — not crying, just quietly frustrated. She exhales softly. Office background softly blurred: monitors, desk partitions, fluorescent lights. Cool color grading, slight desaturation. Vertical 9:16 framing, mid-shot from chest up. Documentary feel."
+    },
+    {
+      "label": "場 4 同事加LINE",
+      "quality": "medium",
+      "prompt": "Two Taiwanese women at adjacent office desks. One coworker (left) is leaning over, smiling helpfully, showing her own phone screen to the other woman (right, our main character). The main character looks curious, slightly skeptical but open. Warm office background, natural window light mixing with fluorescent. Both women in business casual attire. Shallow depth of field. Vertical 9:16 framing. Candid office moment."
+    },
+    {
+      "label": "場 5 LINE 30秒真人回覆",
+      "quality": "medium",
+      "prompt": "Close-up vertical shot of a woman's hands holding a smartphone. The screen shows a green-themed messaging app (LINE-style, no Chinese text) — a short text bubble has been sent, and a reply bubble is appearing with a 'typing...' indicator (three dots). A small timer graphic concept: the reply came back fast. Warm indoor office light. Realistic finger texture and phone reflection. Vertical 9:16 framing. The moment of relief just as a real reply arrives."
+    },
+    {
+      "label": "場 6 主角靠背放鬆",
+      "quality": "medium",
+      "prompt": "The same Taiwanese woman from scene 3, now leaning back slightly in her office chair, shoulders relaxed, a quiet genuine smile on her face as she looks at her phone screen. The tension is gone — she looks relieved. Natural window light from the side, slightly warm tones now (warmer than earlier scenes). Office background softly blurred. Vertical 9:16 framing. Authentic, not posed."
+    },
+    {
+      "label": "場 7 無起送門檻文字強調",
+      "quality": "medium",
+      "prompt": "Overhead shot of a wooden office desk with a small cardboard package (100g, very light) sitting on a postal scale showing a tiny weight. Next to it, a shipping label being filled out. The emphasis is on the smallness and lightness of the package — it CAN be shipped. Warm natural light. Realistic textures. A pen and phone visible at the edge. No text in the image. Vertical 9:16 framing."
+    },
+    {
+      "label": "場 8 收尾安心感",
+      "quality": "medium",
+      "prompt": "The same Taiwanese woman from scene 3 and 6, now at home in the evening — sitting in a warm living room on a sofa, phone in hand, visibly relaxed and comfortable. Soft warm lamp light. A cup of tea on the side table. She looks content, looking slightly off camera with a calm, peaceful expression. Golden warm tones. Vertical 9:16 framing. The feeling of finally finding a solution that works."
+    }
+  ]
+}
